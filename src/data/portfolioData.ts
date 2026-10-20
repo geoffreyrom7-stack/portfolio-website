@@ -31,30 +31,92 @@ export interface CompetencyCategory {
   ataChapters: string[];
 }
 
+export interface EducationItem {
+  level: "Tertiary" | "Secondary" | "Primary";
+  institution: string;
+  degreeOrStrand: string;
+  period: string;
+  status: string;
+  details?: string;
+}
+
 export const PERSONAL_INFO = {
   name: "Geoffrey Lee P. Rom",
-  title: "Aircraft Maintenance Professional",
+  title: "Aircraft Maintenance Technician",
   tagline: "Precision in Flight. Excellence in Maintenance.",
   subTagline:
-    "Trained at the Philippine State College of Aeronautics (PhilSCA). Dedicated to uncompromised airworthiness, zero-defect engineering, and strict CAAP & FAA regulatory compliance across Airframe, Powerplant, and Ground Support systems.",
-  education: {
-    institution: "Philippine State College of Aeronautics (PhilSCA)",
-    degree: "Bachelor of Science in Aviation Maintenance Technology",
-    description:
-      "Premier public state college specializing in aeronautical education in the Philippines, established at Piccio Field, Villamor Air Base. Comprehensive theoretical mastery and hands-on flightline training in turbine engines, airframe structures, and modern aircraft systems.",
-    campus: "Piccio Field, Villamor Air Base, Pasay City, Metro Manila",
-    honors: "Aviation Safety & Airworthiness Excellence Awardee",
-  },
-  status: "Active // Available for MRO & Line Maintenance Deployments",
-  location: "Metro Manila & Clark Aviation Corridor, Philippines",
-  email: "geoffrey.rom.aviation@gmail.com",
+    "A diligent aviation professional trained at the Philippine State College of Aeronautics (PhilSCA). Experienced in aircraft inspections, ramp servicing, aircraft marshalling, and refueling safety protocols with an unwavering commitment to operational efficiency and safety standards.",
+  careerObjective:
+    "A diligent aviation professional with a solid understanding of aircraft systems, maintenance procedures, and aviation safety standards. Possesses hands-on experience from practical training in aircraft inspections, servicing, and basic troubleshooting. Demonstrates strong attention to detail, teamwork, and a commitment to maintaining safety and operational efficiency in fast-paced airport ramp environments.",
+  photoUrl: "/geoffrey_profile.png",
+  phone: "+63 966 743 4101",
+  email: "geoffreyrom7@gmail.com",
+  address: "178 Plaridel St., Brgy. Alang-alang, Mandaue City, Cebu",
+  location: "Mandaue City, Cebu, Philippines",
+  primaryAirport: "Mactan-Cebu International Airport (RPVM / CEB)",
   linkedin: "https://www.linkedin.com/in/geoffrey-lee-rom",
-  phone: "+63 (917) 829-4501",
+  status: "Active // Available for Line Maintenance & Ramp Operations",
+  educationList: [
+    {
+      level: "Tertiary",
+      institution: "Philippine State College of Aeronautics",
+      degreeOrStrand: "Associate in Aircraft Maintenance",
+      period: "2022 - 2024",
+      status: "Graduate",
+      details: "Comprehensive foundation in aircraft systems, maintenance procedures, and practical flightline training.",
+    },
+    {
+      level: "Tertiary",
+      institution: "Philippine State College of Aeronautics",
+      degreeOrStrand: "Bachelor in Aircraft Maintenance Technology",
+      period: "2025 - 2026",
+      status: "Graduate",
+      details: "Advanced aeronautical engineering theory, airworthiness certification standards, and aviation safety management.",
+    },
+    {
+      level: "Secondary",
+      institution: "Academia de San Jose",
+      degreeOrStrand: "Strand STEM (Science, Technology, Engineering, and Mathematics)",
+      period: "Graduated June 2022",
+      status: "Graduate",
+      details: "Rigorous academic preparation in applied physics, mathematics, and technical sciences.",
+    },
+    {
+      level: "Primary",
+      institution: "Academia de San Jose",
+      degreeOrStrand: "Basic Education",
+      period: "Graduated March 2016",
+      status: "Graduate",
+      details: "Foundational academic discipline and scholastic honors.",
+    },
+  ] as EducationItem[],
+  internship: [
+    {
+      title: "Aircraft Marshalling Assistance",
+      description: "Assisted in aircraft marshalling procedures under supervision, coordinating arrival alignment and ramp positioning.",
+      standard: "ICAO Annex 2 / Ramp Safety Standards",
+    },
+    {
+      title: "Aircraft Refueling Safety Observation",
+      description: "Observed and supported aircraft refueling operations following strict aviation safety procedures, static bonding, and fire protocols.",
+      standard: "ATA Chapter 12 / Fuel Safety Protocols",
+    },
+  ],
+  coreCompetencies: [
+    "Performed visual and operational inspections of aircraft",
+    "Applied human factors awareness in daily ground operations",
+    "Followed ramp safety procedures and proper use of ground tools",
+    "Worked effectively as part of a team to ensure safe and coordinated operations",
+  ],
+  languages: [
+    { name: "English", proficiency: "Professional Working Proficiency" },
+    { name: "Filipino", proficiency: "Native / Bilingual" },
+  ],
   stats: [
-    { label: "Flightline & Hangar Hours", value: "1,200+", detail: "Hands-on maintenance log" },
-    { label: "Inspections Conducted", value: "480+", detail: "Zero discrepancy escapes" },
-    { label: "Airworthiness Adherence", value: "100%", detail: "Zero CAAP/FAA safety defects" },
-    { label: "ATA Chapters Mastered", value: "24", detail: "Airframe, Powerplant & GSE" },
+    { label: "PhilSCA Associate & Bachelor", value: "2022–2026", detail: "Aeronautical Credentials" },
+    { label: "Ramp Safety & Marshalling", value: "100%", detail: "Zero-Incident Adherence" },
+    { label: "STEM Academic Foundation", value: "Class '22", detail: "Academia de San Jose" },
+    { label: "Core Aviation Disciplines", value: "4 Pillars", detail: "Inspections, Tools, Ramp, HF" },
   ],
 };
 
@@ -163,20 +225,20 @@ export const COMPETENCIES: CompetencyCategory[] = [
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: "gal-1",
-    title: "CFM56-7B Turbofan Borescope & Blade Profiling",
-    category: "powerplant",
-    aircraftModel: "Boeing 737-800 Next-Gen",
-    ataChapter: "ATA 72-31 Compressor & Turbine",
-    location: "Pasay City, Metro Manila, Philippines",
-    facility: "PhilSCA Main Hangar Facility, Piccio Field, Villamor Air Base",
-    coordinates: "14.5204° N, 121.0189° E",
-    icao: "RPLL / MNL",
+    title: "Aircraft Refueling Safety Observation & Bonding Check",
+    category: "ground_ops",
+    aircraftModel: "Airbus A320-200",
+    ataChapter: "ATA 12-11 Aircraft Refueling",
+    location: "Lapu-Lapu City, Cebu, Philippines",
+    facility: "Mactan-Cebu International Airport Apron Line (RPVM)",
+    coordinates: "10.3075° N, 123.9794° E",
+    icao: "RPVM / CEB",
     imageUrl: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80",
     date: "12 OCT 2026",
     description:
-      "Detailed stage-1 fan blade leading edge blending and high-pressure turbine borescope diagnostic scan following a 1,000-flight-cycle scheduled airworthiness inspection. Zero thermal barrier spalling observed.",
-    toolsUsed: ["Olympus IPLEX G Lite Borescope", "Titanium Blade Blending Files", "White-Light Inspection Array"],
-    signoffStatus: "AIRWORTHINESS RELEASED",
+      "Observed and supported aircraft refueling operations under qualified supervision following strict aviation safety protocols. Verified static bonding grounding cables, fuel sampling visual checks for contaminants, and fuel hydrant safety zone clearance.",
+    toolsUsed: ["Aviation Grounding Reel & Clamp", "White-Light Inspection Array", "Fuel Sampling Beaker"],
+    signoffStatus: "INSPECTION PASSED",
   },
   {
     id: "gal-2",
@@ -197,19 +259,19 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "gal-3",
-    title: "Tarmac Gate Pushback & Dual GSE Coordination",
+    title: "Supervised Aircraft Marshalling & Gate Arrival Procedure",
     category: "ground_ops",
     aircraftModel: "Airbus A321neo",
-    ataChapter: "ATA 09-10 Towing & Pushback",
-    location: "Pasay City, Metro Manila, Philippines",
-    facility: "Ninoy Aquino International Airport (NAIA) Terminal Ramp Line",
-    coordinates: "14.5086° N, 121.0194° E",
-    icao: "RPLL / MNL",
+    ataChapter: "ATA 09-10 Towing & Marshalling",
+    location: "Lapu-Lapu City, Cebu, Philippines",
+    facility: "Mactan-Cebu International Airport (RPVM) Apron Stand 8",
+    coordinates: "10.3086° N, 123.9790° E",
+    icao: "RPVM / CEB",
     imageUrl: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=80",
     date: "04 OCT 2026",
     description:
-      "Supervised ramp departure procedure with 90kVA 400Hz GPU disconnect, nose-gear bypass pin verification, and pushback maneuvering coordination with ramp control tower.",
-    toolsUsed: ["David Clark Noise-Attenuating Headset", "LED Marshalling Wands", "Towbarless Tractor Interface"],
+      "Assisted in aircraft marshalling procedures under qualified supervision. Executed standard ICAO daylight and lighted wand signals for taxiway arrival, gate stop line alignment, landing gear chocks placement, and apron perimeter clearance.",
+    toolsUsed: ["Daylight & LED Marshalling Wands", "Heavy Rubber Wheel Chocks", "High-Vis Ground Safety Attire"],
     signoffStatus: "INSPECTION PASSED",
   },
   {

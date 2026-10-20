@@ -47,65 +47,68 @@ export const AboutSection: React.FC = () => {
               <div className="w-1.5 h-full bg-amber-500 absolute top-0 left-0" />
               <h3 className="text-lg font-bold text-white mb-2 font-sans flex items-center gap-2">
                 <ShieldCheck className="w-5 h-5 text-amber-400" />
-                <span>Dedicated to Uncompromising Aviation Safety</span>
+                <span>Career Objective // Aircraft Maintenance Technician</span>
               </h3>
-              <p className="text-slate-300 mb-4">
-                As an Aircraft Maintenance Professional trained at the prestigious{" "}
-                <strong className="text-white font-semibold">
-                  Philippine State College of Aeronautics (PhilSCA)
-                </strong>
-                , I operate on one core tenet: <em className="text-amber-300 not-italic">in aviation, precision is non-negotiable.</em> Every flight safety release represents human lives, complex multi-million dollar machinery, and strict regulatory stewardship.
+              <p className="text-slate-300 mb-4 text-justify leading-relaxed">
+                {PERSONAL_INFO.careerObjective}
               </p>
-              <p className="text-slate-300">
-                My education combined exhaustive engineering theory with rigorous flightline practicum on Piccio Field at Villamor Air Base. Whether conducting high-pressure borescope inspections on CFM56 turbofans, executing composite structural scarf repairs, or synchronizing high-tempo ground operations on active aprons, I uphold unwavering adherence to manufacturer manuals and international airworthiness mandates.
-              </p>
+              <div className="pt-3 border-t border-slate-800 flex flex-wrap items-center gap-4 text-xs font-mono text-slate-400">
+                <span className="flex items-center gap-1.5 text-amber-400 font-semibold">
+                  <CheckCircle2 className="w-4 h-4" />
+                  <span>PhilSCA Trained</span>
+                </span>
+                <span>•</span>
+                <span>Location: {PERSONAL_INFO.location}</span>
+                <span>•</span>
+                <span>Hub: {PERSONAL_INFO.primaryAirport}</span>
+              </div>
             </div>
 
-            {/* Core Pillars */}
+            {/* Core Competency Pillars from Resume */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="p-4 rounded-lg bg-slate-900/50 border border-slate-800 hover:border-slate-700 transition-colors">
                 <div className="flex items-center gap-2 text-white font-bold text-sm mb-1.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                  <span>Manual Adherence (AMM/SRM)</span>
+                  <span>Visual & Operational Inspections</span>
                 </div>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  Strict step-by-step cross-referencing of OEM maintenance procedures, torque tolerances, and component limits.
+                  Conducted comprehensive visual walkthroughs and operational system checks of aircraft airframes, control surfaces, and powerplants.
                 </p>
               </div>
 
               <div className="p-4 rounded-lg bg-slate-900/50 border border-slate-800 hover:border-slate-700 transition-colors">
                 <div className="flex items-center gap-2 text-white font-bold text-sm mb-1.5">
                   <AlertOctagon className="w-4 h-4 text-amber-400" />
-                  <span>Proactive FOD Mitigation</span>
+                  <span>Human Factors Awareness</span>
                 </div>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  Zero tolerance for foreign objects. Comprehensive ramp sweeps, tooling accountability, and intake inspections.
+                  Applied proactive human factors principles and the Dirty Dozen framework in daily ground and flightline operations.
                 </p>
               </div>
 
               <div className="p-4 rounded-lg bg-slate-900/50 border border-slate-800 hover:border-slate-700 transition-colors">
                 <div className="flex items-center gap-2 text-white font-bold text-sm mb-1.5">
-                  <FileCheck className="w-4 h-4 text-cyan-400" />
-                  <span>CAAP / FAA Compliance</span>
+                  <Wrench className="w-4 h-4 text-cyan-400" />
+                  <span>Ramp Safety & Ground Tools</span>
                 </div>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  Fluent in Philippine Civil Aviation Regulations (PCAR) Parts 5 & 8, Airworthiness Directives (AD), and Service Bulletins (SB).
+                  Followed strict ramp safety procedures, calibrated ground tool handling, and foreign object debris (FOD) mitigation.
                 </p>
               </div>
 
               <div className="p-4 rounded-lg bg-slate-900/50 border border-slate-800 hover:border-slate-700 transition-colors">
                 <div className="flex items-center gap-2 text-white font-bold text-sm mb-1.5">
-                  <Cpu className="w-4 h-4 text-purple-400" />
-                  <span>Modern Diagnostic Tooling</span>
+                  <Building2 className="w-4 h-4 text-purple-400" />
+                  <span>Team Coordination</span>
                 </div>
                 <p className="text-xs text-slate-400 leading-relaxed">
-                  Experienced with digital videoscopes, non-destructive testing (NDT/NDI), automated pitot-static testers, and torque calibrators.
+                  Worked effectively as part of a high-tempo technical team to ensure synchronized, safe, and coordinated airport ramp operations.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Right: PhilSCA Academic Institution Showcase */}
+          {/* Right: Complete Educational Record from Resume */}
           <div className="lg:col-span-5">
             <div className="rounded-xl bg-gradient-to-br from-slate-900 to-[#0e172a] border border-amber-500/40 p-6 sm:p-7 shadow-2xl relative overflow-hidden chamfer-card">
               <div className="hazard-stripes-accent h-1.5 w-full absolute top-0 left-0" />
@@ -117,55 +120,75 @@ export const AboutSection: React.FC = () => {
                   </div>
                   <div>
                     <span className="font-mono text-[10px] text-amber-400 font-bold uppercase tracking-widest block">
-                      Aeronautical Alma Mater
+                      Official Education History
                     </span>
-                    <h4 className="text-base font-bold text-white">PhilSCA Credentials</h4>
+                    <h4 className="text-base font-bold text-white">Academic Credentials</h4>
                   </div>
                 </div>
                 <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
-                  ACCREDITED
+                  VERIFIED
                 </span>
               </div>
 
               <div className="space-y-4 text-sm font-sans">
-                <div>
-                  <div className="text-slate-400 text-xs font-mono">Institution:</div>
-                  <div className="text-white font-bold text-base mt-0.5">
-                    {PERSONAL_INFO.education.institution}
+                {/* Tertiary */}
+                <div className="p-3.5 rounded-lg bg-slate-950/70 border border-slate-800">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-mono text-amber-400 font-bold uppercase">
+                      TERTIARY // PhilSCA
+                    </span>
+                    <span className="text-[11px] font-mono text-slate-400">2022 - 2026</span>
                   </div>
-                  <div className="text-amber-300/90 text-xs font-medium mt-0.5">
-                    Premier State College Specializing in Aviation Education
+                  <div className="text-white font-bold text-sm mt-1">
+                    Philippine State College of Aeronautics
+                  </div>
+                  <div className="text-xs text-slate-300 mt-1 space-y-0.5">
+                    <div className="flex items-center gap-1.5">
+                      <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+                      <span>Associate in Aircraft Maintenance (2022 - 2024, Graduate)</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <span className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
+                      <span>Bachelor in Aircraft Maintenance Technology (2025 - 2026, Graduate)</span>
+                    </div>
                   </div>
                 </div>
 
-                <div className="p-3.5 rounded-lg bg-slate-950/70 border border-slate-800 text-xs text-slate-300 leading-relaxed font-sans">
-                  {PERSONAL_INFO.education.description}
-                </div>
-
-                <div className="space-y-2 pt-1 font-mono text-xs">
-                  <div className="flex items-start gap-2 text-slate-300">
-                    <Building2 className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-                    <span>
-                      <strong className="text-slate-200">Campus:</strong> Piccio Field, Villamor Air Base, Pasay City
+                {/* Secondary */}
+                <div className="p-3.5 rounded-lg bg-slate-950/70 border border-slate-800">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-mono text-cyan-400 font-bold uppercase">
+                      SECONDARY // STEM STRAND
                     </span>
+                    <span className="text-[11px] font-mono text-slate-400">Class of 2022</span>
                   </div>
-                  <div className="flex items-start gap-2 text-slate-300">
-                    <BookOpen className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
-                    <span>
-                      <strong className="text-slate-200">Curriculum:</strong> Aircraft Maintenance Technology (AMT)
-                    </span>
+                  <div className="text-white font-bold text-sm mt-1">
+                    Academia de San Jose
                   </div>
-                  <div className="flex items-start gap-2 text-slate-300">
-                    <Award className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                    <span>
-                      <strong className="text-slate-200">Distinction:</strong> {PERSONAL_INFO.education.honors}
-                    </span>
+                  <div className="text-xs text-slate-300 mt-1">
+                    Strand STEM • Graduated June 2022
                   </div>
                 </div>
 
-                <div className="pt-3 border-t border-slate-800 flex items-center justify-between font-mono text-[11px] text-slate-400">
-                  <span>DISCIPLINE: A&P TECH</span>
-                  <span className="text-amber-400">CODE: PHILSCA-AMT</span>
+                {/* Primary */}
+                <div className="p-3.5 rounded-lg bg-slate-950/70 border border-slate-800">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-mono text-slate-400 font-bold uppercase">
+                      PRIMARY EDUCATION
+                    </span>
+                    <span className="text-[11px] font-mono text-slate-400">Class of 2016</span>
+                  </div>
+                  <div className="text-white font-bold text-sm mt-1">
+                    Academia de San Jose
+                  </div>
+                  <div className="text-xs text-slate-300 mt-1">
+                    Graduated March 2016
+                  </div>
+                </div>
+
+                <div className="pt-2 border-t border-slate-800 flex items-center justify-between font-mono text-[11px] text-slate-400">
+                  <span>DISCIPLINE: AMT</span>
+                  <span className="text-amber-400">STATUS: GRADUATE</span>
                 </div>
               </div>
             </div>
@@ -183,7 +206,7 @@ export const AboutSection: React.FC = () => {
                   : "bg-slate-800/60 text-slate-300 hover:text-white hover:bg-slate-800"
               }`}
             >
-              01 // PHILSCA LAB PRACTICUM
+              01 // INTERNSHIP & PRACTICAL TRAINING
             </button>
             <button
               onClick={() => setActiveTab("philosophy")}
@@ -193,7 +216,7 @@ export const AboutSection: React.FC = () => {
                   : "bg-slate-800/60 text-slate-300 hover:text-white hover:bg-slate-800"
               }`}
             >
-              02 // SAFETY & HUMAN FACTORS
+              02 // HUMAN FACTORS & RAMP SAFETY
             </button>
             <button
               onClick={() => setActiveTab("compliance")}
@@ -203,31 +226,24 @@ export const AboutSection: React.FC = () => {
                   : "bg-slate-800/60 text-slate-300 hover:text-white hover:bg-slate-800"
               }`}
             >
-              03 // REGULATORY COMPLIANCE
+              03 // LANGUAGES & COMMUNICATION
             </button>
           </div>
 
           {activeTab === "education" && (
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-sans text-sm animate-in fade-in">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 font-sans text-sm animate-in fade-in">
               <div className="p-4 rounded-lg bg-slate-950/60 border border-slate-800">
-                <div className="font-mono text-xs text-amber-400 font-bold mb-1">PRACTICUM STAGE 1</div>
-                <div className="font-bold text-white text-base mb-2">Reciprocating & Gas Turbines</div>
+                <div className="font-mono text-xs text-amber-400 font-bold mb-1">INTERNSHIP FOCUS 01</div>
+                <div className="font-bold text-white text-base mb-2">Aircraft Marshalling Procedures</div>
                 <p className="text-slate-400 text-xs leading-relaxed">
-                  Extensive teardown and rebuild of Lycoming O-360 reciprocating engines and Pratt & Whitney PT6 / CFM56 turbine modular systems. Valve timing, magneto timing, and fuel injection synchronization.
+                  Assisted in aircraft marshalling procedures under qualified supervision. Hands-on execution of standardized ICAO marshalling wand signals, gate arrival alignment, and ramp boundary coordination.
                 </p>
               </div>
               <div className="p-4 rounded-lg bg-slate-950/60 border border-slate-800">
-                <div className="font-mono text-xs text-cyan-400 font-bold mb-1">PRACTICUM STAGE 2</div>
-                <div className="font-bold text-white text-base mb-2">Airframe Sheet Metal & Composites</div>
+                <div className="font-mono text-xs text-cyan-400 font-bold mb-1">INTERNSHIP FOCUS 02</div>
+                <div className="font-bold text-white text-base mb-2">Aircraft Refueling Operations</div>
                 <p className="text-slate-400 text-xs leading-relaxed">
-                  Precision layout, bend allowance calculation, structural flush riveting, skin patching, and modern vacuum-bagged composite matrix repair according to AC 43.13-1B standards.
-                </p>
-              </div>
-              <div className="p-4 rounded-lg bg-slate-950/60 border border-slate-800">
-                <div className="font-mono text-xs text-emerald-400 font-bold mb-1">PRACTICUM STAGE 3</div>
-                <div className="font-bold text-white text-base mb-2">Flightline & Ground Systems</div>
-                <p className="text-slate-400 text-xs leading-relaxed">
-                  Live flightline pre-flight checklists, engine ground-run fire guard coordination, hydraulic cart coupling, and safety wire lockwiring with strict 6-to-8 twists per inch precision.
+                  Observed and supported aircraft refueling operations strictly following aviation safety procedures, static bonding grounding wires, fuel sampling checks, and fire safety zone protocols.
                 </p>
               </div>
             </div>
@@ -236,50 +252,43 @@ export const AboutSection: React.FC = () => {
           {activeTab === "philosophy" && (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-sans text-sm animate-in fade-in">
               <div className="p-4 rounded-lg bg-slate-950/60 border border-slate-800">
-                <div className="font-mono text-xs text-red-400 font-bold mb-1">DIRTY DOZEN MITIGATION</div>
-                <div className="font-bold text-white text-base mb-2">Human Factors Defense</div>
+                <div className="font-mono text-xs text-red-400 font-bold mb-1">HUMAN FACTORS</div>
+                <div className="font-bold text-white text-base mb-2">Daily Ground Operations</div>
                 <p className="text-slate-400 text-xs leading-relaxed">
-                  Systematic counter-measures against complacency, fatigue, pressure, and lack of assertiveness. Every maintenance action requires dual independent inspection when releasing primary flight controls.
+                  Active vigilance against fatigue, complacency, and situational distractions to maintain zero-incident ramp environments.
                 </p>
               </div>
               <div className="p-4 rounded-lg bg-slate-950/60 border border-slate-800">
-                <div className="font-mono text-xs text-amber-400 font-bold mb-1">JUST CULTURE</div>
-                <div className="font-bold text-white text-base mb-2">Transparent Hazard Reporting</div>
+                <div className="font-mono text-xs text-amber-400 font-bold mb-1">RAMP SAFETY</div>
+                <div className="font-bold text-white text-base mb-2">Ground Tools & FOD Control</div>
                 <p className="text-slate-400 text-xs leading-relaxed">
-                  Fostering immediate self-reporting of discrepancies, dropped tools, or procedural anomalies before aircraft return-to-service is authorized.
+                  Rigorous tool accountability, calibrated equipment handling, and continuous apron sweeps to prevent foreign object debris damage.
                 </p>
               </div>
               <div className="p-4 rounded-lg bg-slate-950/60 border border-slate-800">
-                <div className="font-mono text-xs text-emerald-400 font-bold mb-1">ENVIRONMENTAL STEWARDSHIP</div>
-                <div className="font-bold text-white text-base mb-2">Hazardous Fluid Containment</div>
+                <div className="font-mono text-xs text-emerald-400 font-bold mb-1">TEAMWORK</div>
+                <div className="font-bold text-white text-base mb-2">Coordinated Execution</div>
                 <p className="text-slate-400 text-xs leading-relaxed">
-                  Proper containment and disposal protocols for Skydrol phosphate-ester hydraulic fluids, turbine lubricating oils, and chemical paint strippers.
+                  Seamless communication between wing walkers, pushback operators, and ground leads to guarantee synchronized turnaround operations.
                 </p>
               </div>
             </div>
           )}
 
           {activeTab === "compliance" && (
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-sans text-sm animate-in fade-in">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 font-sans text-sm animate-in fade-in">
               <div className="p-4 rounded-lg bg-slate-950/60 border border-slate-800">
-                <div className="font-mono text-xs text-amber-400 font-bold mb-1">REGULATION 01</div>
-                <div className="font-bold text-white text-base mb-2">CAAP PCAR Part 5</div>
+                <div className="font-mono text-xs text-amber-400 font-bold mb-1">LANGUAGE // 01</div>
+                <div className="font-bold text-white text-base mb-2">English</div>
                 <p className="text-slate-400 text-xs leading-relaxed">
-                  Airworthiness standards for civil aircraft registered in the Philippines. Maintenance releases, airworthiness directive tracking, and major repair documentation.
+                  Professional working proficiency. Fluent reading and technical comprehension of Aircraft Maintenance Manuals (AMM), safety notices, and aviation communication standards.
                 </p>
               </div>
               <div className="p-4 rounded-lg bg-slate-950/60 border border-slate-800">
-                <div className="font-mono text-xs text-cyan-400 font-bold mb-1">REGULATION 02</div>
-                <div className="font-bold text-white text-base mb-2">FAA AC 43.13-1B / 2B</div>
+                <div className="font-mono text-xs text-cyan-400 font-bold mb-1">LANGUAGE // 02</div>
+                <div className="font-bold text-white text-base mb-2">Filipino</div>
                 <p className="text-slate-400 text-xs leading-relaxed">
-                  Acceptable methods, techniques, and practices for aircraft inspection and repair, standard hardware torquing, electrical bonding, and safety wire procedures.
-                </p>
-              </div>
-              <div className="p-4 rounded-lg bg-slate-950/60 border border-slate-800">
-                <div className="font-mono text-xs text-emerald-400 font-bold mb-1">REGULATION 03</div>
-                <div className="font-bold text-white text-base mb-2">EASA Part-145 Familiarity</div>
-                <p className="text-slate-400 text-xs leading-relaxed">
-                  Approved maintenance organization requirements, certifying staff responsibilities, independent quality audit systems, and component traceabilities.
+                  Native language fluency. Clear, prompt verbal coordination with local maintenance crews, ramp staff, and ground service teams.
                 </p>
               </div>
             </div>

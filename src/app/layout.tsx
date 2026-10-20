@@ -18,9 +18,9 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Geoffrey Lee P. Rom | Aircraft Maintenance Professional | PhilSCA",
+  title: "Geoffrey Lee P. Rom | Aircraft Maintenance Technician | PhilSCA",
   description:
-    "Official portfolio of Geoffrey Lee P. Rom, Aircraft Maintenance Professional trained at the Philippine State College of Aeronautics (PhilSCA). Specializing in Airframe structural inspection, Powerplant turbine diagnostics, and Ground Operations Technology.",
+    "Official portfolio of Geoffrey Lee P. Rom, Aircraft Maintenance Technician trained at the Philippine State College of Aeronautics (PhilSCA). Experienced in aircraft inspections, ramp servicing, aircraft marshalling, and refueling safety protocols.",
   keywords: [
     "Geoffrey Lee P. Rom",
     "Aircraft Maintenance Professional",

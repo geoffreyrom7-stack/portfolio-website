@@ -136,7 +136,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
           <div className="px-3 py-2 bg-slate-900/90 rounded border border-slate-800 flex items-center justify-between text-xs font-mono text-slate-400 mb-3">
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-400 beacon-green" />
-              <span>AIRFIELD STATUS: RPLL NORMAL</span>
+              <span>AIRFIELD STATUS: RPVM (CEBU) NORMAL</span>
             </div>
             <span className="text-amber-400">{currentTime}</span>
           </div>

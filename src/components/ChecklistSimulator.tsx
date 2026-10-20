@@ -218,7 +218,7 @@ export const ChecklistSimulator: React.FC = () => {
               <div className="space-y-2 font-mono text-xs pt-2 border-t border-slate-800">
                 <div className="flex justify-between text-slate-400">
                   <span>Station / Ramp:</span>
-                  <span className="text-slate-200">RPLL Apron Stand 3</span>
+                  <span className="text-slate-200">RPVM Apron Stand 8 (Cebu)</span>
                 </div>
                 <div className="flex justify-between text-slate-400">
                   <span>Standard Manual:</span>

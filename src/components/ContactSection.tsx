@@ -77,6 +77,23 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenResume }) 
             {/* Direct Contact Cards */}
             <div className="space-y-3 font-mono text-xs">
               <a
+                href={`tel:${PERSONAL_INFO.phone}`}
+                className="p-4 rounded-lg bg-slate-900/80 border border-slate-800 hover:border-amber-500/50 transition-colors flex items-center gap-3.5 group block"
+              >
+                <div className="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0 group-hover:scale-105 transition-transform">
+                  <Phone className="w-5 h-5" />
+                </div>
+                <div>
+                  <div className="text-[10px] text-slate-500 uppercase tracking-wider">
+                    Direct Phone / WhatsApp
+                  </div>
+                  <div className="text-sm font-bold text-slate-100 group-hover:text-amber-400 transition-colors font-sans">
+                    {PERSONAL_INFO.phone}
+                  </div>
+                </div>
+              </a>
+
+              <a
                 href={`mailto:${PERSONAL_INFO.email}`}
                 className="p-4 rounded-lg bg-slate-900/80 border border-slate-800 hover:border-amber-500/50 transition-colors flex items-center gap-3.5 group block"
               >
@@ -113,7 +130,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenResume }) 
               </a>
 
               <div className="p-4 rounded-lg bg-slate-900/80 border border-slate-800 flex items-center gap-3.5">
-                <div className="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>
@@ -121,10 +138,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenResume }) 
                     Station & Operations Base
                   </div>
                   <div className="text-sm font-bold text-slate-200 font-sans">
-                    {PERSONAL_INFO.location}
+                    {PERSONAL_INFO.address}
                   </div>
-                  <div className="text-[11px] text-slate-500 font-mono mt-0.5">
-                    Hubs: RPLL (NAIA/Villamor) & RPLC (Clark)
+                  <div className="text-[11px] text-amber-400 font-mono mt-0.5">
+                    Hub: {PERSONAL_INFO.primaryAirport}
                   </div>
                 </div>
               </div>
@@ -174,7 +191,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenResume }) 
                     </div>
                     <div className="flex justify-between text-slate-400">
                       <span>Recipient:</span>
-                      <span className="text-slate-200">Geoffrey Lee P. Rom (PhilSCA AMT)</span>
+                      <span className="text-slate-200">Geoffrey Lee P. Rom (Aircraft Maintenance Technician)</span>
                     </div>
                     <div className="flex justify-between text-slate-400">
                       <span>Status:</span>
@@ -305,7 +322,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenResume }) 
           <div className="flex items-center gap-2">
             <span className="text-amber-400 font-bold">GEOFFREY LEE P. ROM</span>
             <span>•</span>
-            <span>PhilSCA Aviation Maintenance Professional</span>
+            <span>Aircraft Maintenance Technician • Cebu, Philippines</span>
           </div>
 
           <div className="flex items-center gap-6">
